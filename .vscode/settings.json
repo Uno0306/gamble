@@ -1,5 +1,11 @@
 {
     "appService.preDeployTask": "publish-release",
     "appService.deploySubpath": "bin\\Release\\netcoreapp3.1\\publish",
-    "appService.defaultWebAppToDeploy": "/subscriptions/6187f032-f8ac-4d57-8fe1-285e551cf5bf/resourceGroups/gamblersgroup/providers/Microsoft.Web/sites/gamblewebapp"
+    "appService.defaultWebAppToDeploy": "/subscriptions/6187f032-f8ac-4d57-8fe1-285e551cf5bf/resourceGroups/gamblersgroup/providers/Microsoft.Web/sites/gamblewebapp",
+    "azureFunctions.deploySubpath": ".",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen"
 }

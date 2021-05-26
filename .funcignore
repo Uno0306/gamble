@@ -4,6 +4,13 @@
 ###################
 # compiled source #
 ###################
+
+.git*
+.vscode
+local.settings.json
+test
+.venv
+
 *.com
 *.class
 *.dll
@@ -261,6 +268,3 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
-.python_packages
-__pycache__
-.venv
