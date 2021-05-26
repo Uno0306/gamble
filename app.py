@@ -1,19 +1,17 @@
 import pyrebase
 
-config = {
+firebaseConfig = {
     "apiKey": "AIzaSyDkHR3J8gg7ER7rUSm73nJgGN1vIKDdJLI",
     "authDomain": "assign-gamble-web-cloud.firebaseapp.com",
     "projectId": "assign-gamble-web-cloud",
-    "databaseURL": "https://assign-gamble-web-cloud.firebaseio.com",
+    "databaseURL": "https://assign-gamble-web-cloud-default-rtdb.firebaseio.com/",
     "storageBucket": "assign-gamble-web-cloud.appspot.com",
     "messagingSenderId": "285912167841",
     "appId": "1:285912167841:web:9f0713758fae33b672c7e0",
     "measurementId": "G-274ERT67VV"
 }
-}
 
-firebase = pyrebase.initialize_app(config)
-
+firebase = pyrebase.initialize_app(firebaseConfig)
 db = firebase.database()
 
-db.child("admin").child("usd").update({"2":"1202"})
+db.child("admin").child("usd").update({4:1202})
