@@ -50,11 +50,13 @@ blind = soup.select('div.head_info > span.blind')
 #           pass
 
 
-i = 3
-
-for c_list in soup:
-     try:
-          db.child("admin").child("usd").update({i:name_price})
-          i = i + 1
-     except IndexError:
-          pass
+i = 5
+price_txt=name_price[0].text
+print(price_txt)
+price = price_txt.replace(",","")
+print(price)
+# try:
+#      db.child("admin").child("usd").update({i:usd})
+#      i = i + 1
+# except IndexError:
+#      pass
