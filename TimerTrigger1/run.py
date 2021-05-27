@@ -1,7 +1,6 @@
 import os
 from bs4 import BeautifulSoup
 import urllib.request as req
-import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 import pyrebase
@@ -40,23 +39,19 @@ name_price = soup.select('span.value')
 change = soup.select('span.change')
 blind = soup.select('div.head_info > span.blind')
 
-
-# i = 0
-# for c_list in soup:
-#      try:
-#           print(i+1,name_nation[i].text, name_price[i].text, change[i].text, blind[i].text)
-#           i = i + 1
-#      except IndexError:
-#           pass
-
-
-i = 5
-price_txt=name_price[0].text
-print(price_txt)
-price = price_txt.replace(",","")
-print(price)
-# try:
-#      db.child("admin").child("usd").update({i:usd})
-#      i = i + 1
-# except IndexError:
-#      pass
+# 가져온 정보를 파이어베이스에 넣기
+i = 0
+for c_list in soup:
+    try:
+        price_txt=name_price[i].text
+        price = float(price_txt.replace(",",""))
+        if i==1:
+            name = name_nation[i].text[3:6]
+        else:    
+            name = name_nation[i].text[-3:]
+        db.child("admin").child("exchange").update({name:price})
+        i = i + 1
+        if i==4:
+            break
+    except IndexError:
+        pass
