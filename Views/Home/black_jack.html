@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="black_jack.css">
+    <title></title>
+    <script type="text/javascript" src="black_jack.js"></script>
+  </head>
+  <body>
+    <div class="player_board" id="player_board"></div>
+
+    <div class="dealer_board" id="dealer_board"></div>
+
+<div class="show">
+
+    <div  id="start">
+      <input type="button"  name="" value="시작" onclick="new_start()">
+    </div>
+
+    <div  id="restart" style="display:none;">
+      <input type="button"  name="" value="다시 시작" onclick="turn()" >
+    </div>
+    <div  id="gaming" style="display:none;">
+    <!--  <input type="button" name="" value="덱 보기" onclick="view()">-->
+      <input type="button" name="" value="카드 받기" onclick="pick()">
+      <input type="button" name="" value="콜" onclick="call_to()">
+      <input type="button" name="" value="포기" onclick="give_up()">
+    </div>
+    <div id="viewer">
+
+    </div>
+    <div  id="player_num_board">
+      player : <input type="text" name="" value="" id="player_num"><br>
+      player score : <input type="text" name="" value="500" id="player_score">
+      <input type="button" name="" value="게임 끝" onClick="location.href='main.html'">
+    </div>
+    <div id="com_num_board" style="display:none;">
+      dealer : <input type="text" name="" value="" id="dealer_num">
+    </div>
+</div>
+<audio src="audio/jenius.mp3" autoplay loop></audio>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: #000088;
+  }
+    .player_board{
+      position:absolute;
+      bottom: 50px;
+      left: 50%;
+      width: 500px;
+      height: 250px;
+      background-color: green;
+      border: 3px solid black;
+      margin: 0px 0px 0px -250px;
+      padding: 0px 0px 0px 30px;
+    }
+    .player_board div{
+      margin-top: 30px;
+      margin-right:-70px;
+      width: 120px;
+      height: 180px;
+      float: left;
+      font-size: 30pt;
+    }
+    .dealer_board{
+      position:absolute;
+      top: 50px;
+      left: 50%;
+      width: 500px;
+      height: 250px;
+      background-color: green;
+      border: 3px solid black;
+      margin: 0px 0px -125px -250px;
+      padding: 0px 0px 0px 30px;
+    }
+    .dealer_board div{
+      margin-top: 30px;
+      margin-right:-70px;
+      width: 120px;
+      height: 180px;
+      float: left;
+      font-size: 30pt;
+    }
+    .show{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -40px 0px 0px -125px;
+      text-align: center;
+    }
