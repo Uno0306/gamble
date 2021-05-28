@@ -2,15 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <!-- firebase 불러오기 -->
-    <script src="../../fb/conn.js"></script>
+    @* <script src="../../fb/conn.js"></script> *@
     <!-- firebase 불러오기 끝 -->
+    <script>
+        src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"
+        src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyDkHR3J8gg7ER7rUSm73nJgGN1vIKDdJLI",
+            authDomain: "assign-gamble-web-cloud.firebaseapp.com",
+            projectId: "assign-gamble-web-cloud",
+            storageBucket: "assign-gamble-web-cloud.appspot.com",
+            messagingSenderId: "285912167841",
+            appId: "1:285912167841:web:9f0713758fae33b672c7e0",
+            measurementId: "G-274ERT67VV"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+    </script>
+
 </head>
 <body>
     <div class="text-center">
-        <h1 class="display-4">Welcome to the gamble~~~</h1>
+        <h1 class="display-4">Welcome to the gamble~!~!</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     </div>
-
-    
+    <div><a href="1.html"><b>1</b></a></div>
 </body>
