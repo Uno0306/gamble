@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '3.1.301'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'gamblewebapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_39fc43b3bd6e4b608398884b0267e10d }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_93849450626243c6af3693351a3664e0 }}
         package: .
