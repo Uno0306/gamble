@@ -28,6 +28,22 @@ namespace gamble.Controllers
             return View();
         }
 
+        public IActionResult c__Cloud_Virtual_Coding_gamble_Views_Home_1()
+        {
+            return View();
+        }
+
+        public IActionResult c__Cloud_Virtual_Coding_gamble_Views_Home_2()
+        {
+            return View();
+        }
+
+        public IActionResult black_jack()
+        {
+            return View();
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
