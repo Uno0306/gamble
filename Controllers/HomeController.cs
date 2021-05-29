@@ -33,7 +33,7 @@ namespace gamble.Controllers
             return View();
         }
 
-        public IActionResult c__Cloud_Virtual_Coding_gamble_Views_Home_2()
+        public IActionResult A2()
         {
             return View();
         }
@@ -42,7 +42,6 @@ namespace gamble.Controllers
         {
             return View();
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

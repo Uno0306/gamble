@@ -63,7 +63,7 @@ function player_card_show(){
   for (var i = 0; i < player_card.length; i++) {
     var div = document.createElement("div");
     div.id = "player"+i;
-    div.style.backgroundImage = "url('image/"+player_card[i]+".png')";
+    div.style.backgroundImage = "url('../image/"+player_card[i]+".png')";
     div.style.backgroundSize = "120px 180px";
     cell.appendChild(div);
   }
@@ -78,7 +78,7 @@ function com_card_show(num){
     var div = document.createElement("div");
     div.id = "com"+0;
     //div.innerHTML = com_card[0];
-    div.style.backgroundImage = "url('image/back.png')";
+    div.style.backgroundImage = "url('../image/back.png')";
     div.style.backgroundSize = "120px 180px";
     cell.appendChild(div);
   }
@@ -86,7 +86,7 @@ function com_card_show(num){
     var div = document.createElement("div");
     div.id = "com"+i;
   //  div.innerHTML = com_card[i];
-    div.style.backgroundImage = "url('image/"+com_card[i]+".png')";
+    div.style.backgroundImage = "url('../image/"+com_card[i]+".png')";
     div.style.backgroundSize = "120px 180px";
     cell.appendChild(div);
   }
