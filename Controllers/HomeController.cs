@@ -28,7 +28,7 @@ namespace gamble.Controllers
             return View();
         }
 
-        public IActionResult c__Cloud_Virtual_Coding_gamble_Views_Home_1()
+        public IActionResult A1()
         {
             return View();
         }
