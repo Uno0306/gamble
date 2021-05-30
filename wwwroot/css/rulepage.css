@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css); /*폰트 api 가져옴*/
+html {font-family: 'Jeju Gothic', serif;}
+body{
+  background-color: #000088;
+}
+
+.main{
+  background-color: #005500;
+  width: 1200px;
+  height: 720px;
+  margin-left : 150px;
+  position: absolute;
+}
+.title_text{
+  color : white;
+  font-size: 25px;
+  margin-top : 2%;
+  height: 10px;
+  line-height: 60px;
+}
+.main_text{
+   border-style: double;
+   width:99%;
+   height:5%;
+}
+#twincard_text_title{
+  margin-top : 35px;
+  font-weight: bold;
+  position: absolute;
+  left:2%;
+  color:yellow;
+}
+#twincard_text{
+
+  color : white;
+  font-size : 18px;
+  position: absolute;
+  left:2%;
+}
+#Indian_Poker_title{
+  margin-top : 35px;
+  font-weight: bold;
+  position:absolute;
+
+  color:yellow;
+}
+#Indian_Poker_text{
+  color : white;
+  left:36%;
+  font-size : 18px;
+  position: absolute;
+}
+#black_jack_title{
+  margin-top : 35px;
+  font-weight: bold;
+  position:absolute;
+  color:yellow;
+}
+#black_jack_text{
+  color : white;
+  left:67%;
+  font-size : 18px;
+  position: absolute;
+}
+#mainbutton{
+  position : absolute;
+  left :42%;
+  top : 90%;
+  width : 200px;
+  height: 30px;
+}

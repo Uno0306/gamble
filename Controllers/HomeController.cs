@@ -33,12 +33,22 @@ namespace gamble.Controllers
             return View();
         }
 
-        public IActionResult A2()
+        public IActionResult main()
         {
             return View();
         }
 
-        public IActionResult black_jack()
+        public IActionResult BlackJack()
+        {
+            return View();
+        }
+
+        public IActionResult CardMatch1()
+        {
+            return View();
+        }
+
+        public IActionResult IndianPoker()
         {
             return View();
         }

@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+html {font-family: 'Jeju Gothic', serif;}
+body{background: navy;}
+.cardSet {
+  position: fixed;
+  left: 25%;
+}
+.card {
+  background-image: url("image/back.png");
+  background-size: 106x 152px;
+  width: 106px;
+  height: 152px;
+  margin: 10px;
+  top:13%;
+}
+#start {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 200px;
+  top: 680px;
+}
+#restart {
+  position: absolute;
+  width: 110px;
+  height: 30px;
+  left: 350px;
+  top: 680px;
+}
+#end{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 650px;
+  top: 680px;
+}
+#score_result {
+  font-size: 30px;
+  text-align: center;
+
+  position: absolute;
+  border-color: blue;
+  border-width: 0.5px;
+  border-style: outset;
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+  left: 190px;
+  top:0px;
+}

@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+body{background: navy;}
+.card{
+  width: 140px;
+  height: 200px;
+  margin: 50px;
+  margin-left: 45%;
+  font-size: 30pt;
+}
+.result{
+  font-size: 30pt;
+  color: white;
+}
+.score{
+  font-size: 30pt;
+  color: white;
+}
+.dealeremotion{
+  width: 80px;
+  height: 80px;
+}
+.round{
+  font-size: 30pt;
+  color: white;
+}
+.roundtext{
+  font-size: 30pt;
+  color: white;
+}
+input{
+  width: 90px;
+  height: 40px;
+  margin : 5px;
+}
+html {font-family: 'Jeju Gothic', serif;}
+.Indian_Poker{
+  color : red;
+  font-size : 25px;
+  font-weight: bold;
+  border-style:groove;
+  border-width : 5px;
+  margin : 10px;
+  padding : 10px;
+}
+.button_box
+{
+  border-width: 5px;
+  border-style: groove;
+  margin : 5px;
+  padding : 5px;
+}

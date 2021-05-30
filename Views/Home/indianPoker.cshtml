@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/indianPoker.css" />
+    <script src="/js/indianPoker.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="result" id="dealer" style = "position : absolute; left:400px; Top:110px">
+      <b>
+      </b>
+    </div>
+    <div class="result" id="me" style = "position : absolute; left:400px; Top:320px">
+      <b>
+      </b>
+    </div>
+    <div style="text-align: center">
+        <div class="Indian_Poker">Indian_Poker</div>
+        <div class="card" id="com">
+        </div>
+        <div class="card" id="player">
+        </div>
+        <br>
+        <div class="button_box">
+            <input type="button" name="" value="Call" onclick="Call()">
+            <input type="button" name="" value="Die" onclick="DieLose()"><br>
+            <input type="button" name="" value="게임시작" onclick="suple()">
+            <input type="button" name="" value="게임 끝" onClick="location.href='main.cshtml'">
+            <div class="score" id="winscore" style = "position : absolute; Right:200px; Top:550px"></div>
+            <div class="round" id="round" style = "position : absolute; Left:200px; Top:550px"></div>
+            <div class="roundtext" id="roundtext" : style = "position : absolute; Left:50px; Top:550px"></div>
+            <div class="dealeremotion" id="dealeremotion" style = "position : absolute; Left:300px; Top:100px"></div>
+        </div>
+    </div>
+  <!--<audio src="audio/A Fistful Of Dollars.mp3" autoplay loop></audio>-->
+  </body>
+</html>

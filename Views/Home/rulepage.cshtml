@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="/css/rulepage.css" />
+  <script type="text/javascript">
+    function start() {
+      setTimeout(show_main, 1000);
+    }
+
+    function show_main() {
+      document.getElementById('main').style.display = "block";
+    }
+  </script>
+</head>
+
+<body onload="start()">
+  <div class="main" id="main" style="display:none;">
+    <div class="title_text" text-align="center">
+      Game Rule</div>
+      <div class="main_text">
+        <br>
+        <span id="twincard_text" text-align="left"><span id="twincard_text_title">Twin_card game</span>
+        <br><br><br><br>
+          1단계 : 5쌍의 카드, 카드보기5 초, 기회 3번<br>
+          2단계 : 10쌍의 카드, 카드보기 7초, 기회 6번<br>
+          3단계 : 15쌍의 카드, 카드보기 11초 , 기회 10번<br>
+          <br>
+          각 스테이지별로 기회안에 모든 쌍을 맞춰야 <br>
+          다음 단계로 넘어갈 수 있음<br>
+          <br>
+          시작버튼을 눌러 시작하고<br> 다시 시작으로 재시작한다.<br>
+          <br>
+          성공 100점 득점<br> 실패 50점 차감<br>
+          <br><br><br>
+        </span>
+        <span id="Indian_Poker_text" text-align="left"><span id="Indian_Poker_title">IndianPoker</span>
+          <br><br><br><br>
+          자신의 카드는 볼 수 없습니다.<br>
+          오직 상대방의 카드를 보고 call 또는 die<br>
+          를 선택하여 겨루는 게임<br><br>
+          자신의 턴에 call 또는 die를 선택합니다.<br>
+          승부에서 이긴 사람이 다음턴에 먼저 선택<br><br>
+
+          카드는 A부터 10까지 (A는 1로 계산) 있습니다. <br><br>
+          1라운드 ~ 10라운드까지 진행 <br><br>
+
+          call로 이기면 +200점 <br>
+          call로 지면 -200점<br><br>
+          die는 -100점 <br><br>
+          10을 들고 die---> -500점<br><br>
+
+        </span>
+        <span id="black_jack_text" text-align="left"><span id="black_jack_title">BlackJack</span>
+          <br><br><br><br>
+          A는 1 또는 11로 계산합니다.<br>
+          K, Q, J은 각각 10으로 계산합니다. <br>
+          그 외의 카드는 카드에 표시된 숫자로 계산합니다.<br><br>
+
+          처음 시작시 카드를 2장 받습니다.<br>
+          딜러는 카드 중 한장을 오픈<br>
+          딜러는 카드의 합이 17이 될때까지 추가로 카드를 뽑습니다.<br>
+          플레이어는 카드의 합이 21을 넘지 않는 범위 내에서 <br>
+          추가 카드를 받을수도 있고 받지 않을 수도 있습니다.<br><br>
+          딜러와 플레이어 중 카드의 합이 21 또는 21에 가장 가까운 숫자를 가지는 쪽이 이기는 게임입니다.<br><br><br>
+
+          승리 : 100점 득점<br>
+          패배 : 100점 감점 <br>
+          Blackjack : 합이 21일 경우 200점 득점<br>
+          Bust : 카드 합이 21을 초과하면 100점 감점<br>
+          Draw : 카드 합이 같을 경우 서로 비김<br><br>
+          Giveup : 게임을 포기하면 50점 감점<br><br>
+        </span>
+    </div>
+    <input type="button" id="mainbutton" name="back" value="main" onclick ="location.href='main.html'">
+</div>
+<!--<audio src="audio/IDIOTAPE -Toad Song.mp3" autoplay loop></audio>-->
+</body>
+
+</html>

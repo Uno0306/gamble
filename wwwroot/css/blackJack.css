@@ -1,5 +1,5 @@
 body{
-    background-color: #000088;
+    background-color: black;
   }
     .player_board{
       position:absolute;
@@ -7,8 +7,8 @@ body{
       left: 50%;
       width: 500px;
       height: 250px;
-      background-color: green;
-      border: 3px solid black;
+      background-color: #3EB489;
+      border: 3px solid white;
       margin: 0% 0% 8% 0%;
       padding: 0px 30px 0px 30px;
     }
@@ -26,8 +26,8 @@ body{
       left: 50%;
       width: 500px;
       height: 250px;
-      background-color: green;
-      border: 3px solid black;
+      background-color: #3EB489;
+      border: 3px solid white;
       margin: 8% 0% 0% 0%;
       padding: 0px 30px 0px 30px;
     }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="/css/cardMatch1.css" />
+
+  <script type="text/javascript" src="/js/cardMatch1.js"></script>
+</head>
+<body onload="shuffle()">
+  <audio src="audio/twin_card_bgm.mp3" autoplay loop>  </audio>
+  <div class="cardSet" style="position:center">
+    <div class="card" onclick="turn(this.id)" id="0" style="position : absolute; left:5px ">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="1" style="position : absolute; left:130px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="2" style="position : absolute; left:255px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="3" style="position : absolute; left:380px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="4" style="position : absolute; left: 505px">
+    </div>
+    <br>
+    <div class="card" onclick="turn(this.id)" id="5" style="position : absolute; left:5px ; margin-top : 180px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="6" style="position : absolute; left:130px ; margin-top : 180px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="7" style="position : absolute; left:255px ; margin-top : 180px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="8" style="position : absolute; left:380px ; margin-top : 180px">
+    </div>
+    <div class="card" onclick="turn(this.id)" id="9" style="position : absolute; left:505px ; margin-top : 180px">
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <input type="button" name="" id="start" value="시작" onclick="card_show()">
+    <input type="button" name="" id="restart" value="다시시작" onclick="refresh()">
+    <input type="button" name="" id="end" value="게임 끝" onClick="location.href='main.cshtml'">
+    <div class="score" id="score_result"> </div>
+  </div>
+</body>
+
+</html>
