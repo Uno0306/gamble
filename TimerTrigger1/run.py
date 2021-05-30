@@ -34,7 +34,8 @@ url = "https://finance.naver.com/marketindex/"
 res = req.urlopen(url)
 soup = BeautifulSoup(res,"html.parser", from_encoding='euc-kr')
 
-name_nation = soup.select('h3.h_lst > span.blind')
+# 태그.클래스 > 포함되는 클래스
+name_nation = soup.select('h3.h_lst > span.blind')  
 name_price = soup.select('span.value')
 change = soup.select('span.change')
 blind = soup.select('div.head_info > span.blind')

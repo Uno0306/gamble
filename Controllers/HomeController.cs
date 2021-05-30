@@ -33,7 +33,12 @@ namespace gamble.Controllers
             return View();
         }
 
-        public IActionResult main()
+        public IActionResult Join()
+        {
+            return View();
+        }
+
+        public IActionResult Main()
         {
             return View();
         }

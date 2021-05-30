@@ -2,26 +2,41 @@
     ViewData["Title"] = "Home Page";
 }
 <head>
+    <!-- Include CSS -->
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
-    <!-- firebase 불러오기 -->
-    @* <script src="../../fb/conn.js"></script> *@
-    <!-- firebase 불러오기 끝 -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="/fb/conn.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+    <!-- Connect firebase -->
     <script>
-        src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"
-        src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"
+        var money_list = [];
+        var money_list_val = [];
+        $(document).ready(function(){
 
-        var firebaseConfig = {
-            apiKey: "AIzaSyDkHR3J8gg7ER7rUSm73nJgGN1vIKDdJLI",
-            authDomain: "assign-gamble-web-cloud.firebaseapp.com",
-            projectId: "assign-gamble-web-cloud",
-            storageBucket: "assign-gamble-web-cloud.appspot.com",
-            messagingSenderId: "285912167841",
-            appId: "1:285912167841:web:9f0713758fae33b672c7e0",
-            measurementId: "G-274ERT67VV"
-        };
+        database.ref('/admin/' + money_list + '/exchange/').once('value').then(function (snapshot) {
+            snapshot.forEach(function (costSnapshot) {
+                var costKey = costSnapshot.key;
+                var costVal = costSnapshot.val();
+                money_list.push(costKey);
+                money_list_val.push(costVal);
+            });
+            console.log(money_list);
+            console.log(money_list_val);
 
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+            var test_key_append = "";
+
+
+            for(let i=0; i<=money_list.length-1; i++){
+                test_key_append += '<p>'+money_list[i]+' : '+money_list_val[i]+'</p>';
+            }
+
+            $('#test').append(test_key_append);
+        });
+        });
 
     </script>
 
@@ -31,11 +46,11 @@
         <h1 class="display-4">Welcome to the gamble~!~!</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     </div>
-    <div><a href="https://localhost:5001/Home/A1.html"><b>1</b></a></div>
+    <div><a href="/Home/A1.html"><b>1</b></a></div>
     <br>
-    <div><a href="https://localhost:5001/Home/A2"><b>2</b></a></div>
+    <div><a href="/Home/A2"><b>2</b></a></div>
     <br>
-    <div><a href="https://localhost:5001/Home/black_jack"><i>blackjack</i></a></div>
+    <div><a href="/Home/black_jack"><i>blackjack</i></a></div>
     <br><br><br>
 
     <div style="text-align: center;">
@@ -44,23 +59,30 @@
                 <td class="input-board">
                     <input class="input_box" type="text" name="id" id="id" placeholder="아이디" required>
                 </td>
-                <td class="input-board" rowspan="2">
+                <td class="" rowspan="2">
                     <button class="login-Btn" onclick="" >로그인</button>
                 </td>
             </tr>
             <tr>
-                <td class="">
+                <td class="input-board">
                     <input class="input-box" type="password" name="pwd" id="pwd" placeholder="비밀번호" required>
                 </td>
             </tr>
             <tr>
                 <td>
                     <button class="" onclick="">아이디 찾기</button>
+                </td>
+                <td>
                     <button class="" onclick="">비밀번호 찾기</button>
+                </td>
+                <td>
                     <button class="" onclick="">회원가입</button>
                 </td>
             </tr>
         </table>
+    </div>
+    <div id="test">
+
     </div>
 
     <br><br><br><br>
