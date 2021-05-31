@@ -39,6 +39,7 @@ name_nation = soup.select('h3.h_lst > span.blind')
 name_price = soup.select('span.value')
 change = soup.select('span.change')
 blind = soup.select('div.head_info > span.blind')
+time = soup.select('div.graph_info > span.time')
 
 # 가져온 정보를 파이어베이스에 넣기
 i = 0
@@ -46,11 +47,13 @@ for c_list in soup:
     try:
         price_txt=name_price[i].text
         price = float(price_txt.replace(",",""))
+        realTime = time[i].text
         if i==1:
             name = name_nation[i].text[3:6]
         else:    
             name = name_nation[i].text[-3:]
         db.child("admin").child("exchange").update({name:price})
+        db.child("admin").child("exchange").update({"time":realTime}) 
         i = i + 1
         if i==4:
             break

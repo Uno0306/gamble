@@ -16,32 +16,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
     <script src="/fb/conn.js" type="text/javascript"></script>
-    
-    <!-- Output Exchange rate -->    
-    <script>
-        var money_list = [];
-        var money_list_val = [];
-        $(document).ready(function(){
-            database.ref('/admin/' + money_list + '/exchange/').once('value').then(function (snapshot) {
-                snapshot.forEach(function (costSnapshot) {
-                    var costKey = costSnapshot.key;
-                    var costVal = costSnapshot.val();
-                    money_list.push(costKey);
-                    money_list_val.push(costVal);
-                });
-                console.log(money_list);
-                console.log(money_list_val);
-
-                var test_key_append = "";
-
-                for(let i=0; i<=money_list.length-1; i++){
-                    test_key_append += '<p>'+money_list[i]+' : '+money_list_val[i]+'</p>';
-                }
-
-                $('#test').append(test_key_append);
-            });
-        });
-    </script>
 
 </head>
 <body>
@@ -85,8 +59,10 @@
         </table>
     </div>
     <div id="test">
-
+        <script>rate()</script>
     </div>
+
+   
 
     <br><br><br><br>
     <div style="align-items: center; text-align: center;">
