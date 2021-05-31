@@ -1,0 +1,65 @@
+table{
+    width: 800px;
+    height: 600px;
+    align-items: center;
+}
+.left_box{
+    width: 350px;
+    height: 250px;
+    align-items: center;
+}
+.rigtht_box{
+    width: 350px;
+    height: 250px;
+    align-items: center;
+}
+.profile{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.divv{
+    width: auto;
+    height: 500px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.left{
+    width: 380px;
+    height: 480px;
+    margin: 5px;
+    margin-left: 20%;
+    float: left;
+}
+.right{
+    width: 380px;
+    height: 480px;
+    margin: 5px;
+    float: left;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background: white;
+    text-align: center;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background: white;
+  }
+  
+.chean{
+    clear: both;
+    height: 300px;
+    width: 300px;
+}  
+

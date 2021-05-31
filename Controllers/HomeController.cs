@@ -28,11 +28,6 @@ namespace gamble.Controllers
             return View();
         }
 
-        public IActionResult A1()
-        {
-            return View();
-        }
-
         public IActionResult Join()
         {
             return View();

@@ -1,9 +1,10 @@
 @{
+    Layout=null;
     ViewData["Title"] = "main";
 }
 <head>
     <!-- Include CSS -->
-    @* <link rel="stylesheet" type="text/css" href="/css/main.css" /> *@
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
 <!-- Include JQuery -->
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -37,37 +38,19 @@
 </head>
 
 <body>
-    <div id="test_append">
-        <p>222dksakndksna22222</p>
-        <br>
-        <b>회원가입 후에 들어오게 만들어야 하는데...</b>
-        <br>
-        <table> 
-            <tr>
-                <td class="left_box">
-                    <img class="profile" src="">
-                </td>
-                <td class="right_box">
-                    <tr>
-                       <td id="showId">
-                            1. <script>loginId()</script>
-                       </td>
-                       <td>
-                           2. <p class="showId"></p>
-                       </td>
-                    </tr>
-                    <tr>
-                        <input type="text" name="nickName" id="nickName" placeholder="닉네임">
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            환전
-                            <button onclick="exchange()">환전</button> 
-                        </td>
-                    </tr>
-                </td>
-            </tr>
-        </table>
-        <script>console.log("id: "+id);</script>
+    <div class="divv">
+        <div class="left">
+            <img class="profile" src="/image/person.png">
+        </div>
+        <div class="right">
+            <div id="showId"><script>loginId()</script></div>
+            <input type="text" class="" placeholder="닉네임">
+            <button id="" onclick="">입력</button>
+            <br>
+            <div class="chean">
+                <script>ratee()</script>
+            </div>
+        </div>
     </div>
+    
 </body>

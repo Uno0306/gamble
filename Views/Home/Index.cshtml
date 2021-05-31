@@ -1,4 +1,5 @@
 ﻿@{
+    Layout=null;
     ViewData["Title"] = "Home Page";
 }
 <head>
@@ -19,18 +20,12 @@
 
 </head>
 <body>
-    <div class="text-center">
-        <h1 class="display-4">Welcome to the gamble~!~!</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div id="test">
+        <p>환율</p>
+        <script>rate()</script>
     </div>
-    <div><a href="/Home/A1.html"><b>1</b></a></div>
-    <br>
-    <div><a href="/Home/A2"><b>2</b></a></div>
-    <br>
-    <div><a href="/Home/black_jack"><i>blackjack</i></a></div>
-    <br><br><br>
 
-    <div style="text-align: center;">
+    <div class="login-form">
         <table style="text-align: center; margin-left: auto; margin-right: auto;">
             <tr>
                 <td class="input-board">
@@ -42,31 +37,24 @@
             </tr>
             <tr>
                 <td class="input-board">
-                    <input class="input-box" type="password" name="pwd" id="pwd" placeholder="비밀번호" required>
+                    <input class="input_box" type="password" name="pwd" id="pwd" placeholder="비밀번호" required>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button class="" onclick="">아이디 찾기</button>
+                    <button class="click" onclick="">아이디 찾기</button>
                 </td>
                 <td>
-                    <button class="" onclick="">비밀번호 찾기</button>
+                    <button class="click" onclick="">비밀번호 찾기</button>
                 </td>
                 <td>
-                    <button class="" onclick="goJoin()">회원가입</button>
+                    <button class="click" onclick="goJoin()">회원가입</button>
                 </td>
             </tr>
         </table>
     </div>
-    <div id="test">
-        <script>rate()</script>
-    </div>
 
-   
 
-    <br><br><br><br>
-    <div style="align-items: center; text-align: center;">
-        김치감자감자c참치참치아이
-    </div>
+    
 
 </body>

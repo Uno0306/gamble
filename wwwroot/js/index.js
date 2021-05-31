@@ -58,7 +58,7 @@ function rate(){
             var test_key_append = "";
             
             for(let i=0; i<=money_list.length-1; i++){
-                test_key_append += '<p>'+money_list[i]+' : '+money_list_val[i]+'</p>';
+                test_key_append += '<p>'+money_list[i]+'  '+money_list_val[i]+'</p>';
             }
             
             $('#test').append(test_key_append);

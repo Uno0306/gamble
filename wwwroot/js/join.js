@@ -16,19 +16,6 @@ function join(){
     var userUnit = document.getElementById('unit').value;
     var chip1 = 10;
 
-    switch (userUnit){
-        case "JPY":
-            firebase.database().ref('/user/'+userId).update({
-                won : 0,
-                eur : 0,
-                cny : 0,
-                jpy : userMoney,
-                usd : 0
-            });
-
-    };
-
-    
     if(idClear==1){
         if(userPwd!=userPwdChk){
             alert("비밀번호를 확인해주세요");
@@ -41,28 +28,28 @@ function join(){
             });
             if(userUnit=="WON"){
                 firebase.database().ref('/user/'+userId).update({
-                    WON : userMoney, USD : 0, EUR : 0, JPY : 0, CNY : 0
+                    WON : parseFloat(userMoney), USD : 0, EUR : 0, JPY : 0, CNY : 0
                 });
             }else if(userUnit=="USD"){
                 firebase.database().ref('/user/'+userId).update({
-                    WON : 0, USD : userMoney, EUR : 0, JPY : 0, CNY : 0
+                    WON : 0, USD : parseFloat(userMoney), EUR : 0, JPY : 0, CNY : 0
                 });
             }else if(userUnit=="EUR"){
                 firebase.database().ref('/user/'+userId).update({
-                    WON : 0, USD : 0, EUR : userMoney, JPY : 0, CNY : 0
+                    WON : 0, USD : 0, EUR : parseFloat(userMoney), JPY : 0, CNY : 0
                 });
             }else if(userUnit=="JPY"){
                 firebase.database().ref('/user/'+userId).update({
-                    WON : 0, USD : 0, EUR : 0, JPY : userMoney, CNY : 0
+                    WON : 0, USD : 0, EUR : 0, JPY : parseFloat(userMoney), CNY : 0
                 });
             }else if(userUnit=="CNY"){
                 firebase.database().ref('/user/'+userId).update({
-                    WON : 0, USD : 0, EUR : 0, JPY : 0, CNY : userMoney
+                    WON : 0, USD : 0, EUR : 0, JPY : 0, CNY : parseFloat(userMoney)
                 });
             }
             
             alert("회원가입이 완료되었습니다!");
-
+            window.location.href="/Home/index";
         }
     }else{
         alert("아이디 중복 확인을 해주세요.")

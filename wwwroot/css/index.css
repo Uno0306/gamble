@@ -1,14 +1,35 @@
 body{
-    background: #3EB489;
+    background: black;
+    text-align: center;
+    background-image: url("/image/index_background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.login-form{
+    align-items: center;
+    margin-top: 150px;
+}
+
+#test{
+    margin-left: 0px;
+    text-align: left;
+    color: white;
+    width: 200px;
+    height: 300px;
 }
 
 .input-board{
-    width: 50px;
-    height: 20px;
+    width: 60px;
+    height: 50px;
 }
 
 .input_box{
     border-radius: 4px;
+    border: 0px;
+    width: auto;
+    height: 40px;
 }
 
 .login-Btn{
@@ -17,3 +38,12 @@ body{
     border-radius: 4px;
     border: 0px;
 }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background: white;
+  }
+  
