@@ -40,8 +40,6 @@ function ratee(){
             
             for(let i=0; i<5; i++){
                 test_key_append += '  '+money_list_val[i]+money_list[i]+' <button onclick="exchange'+i+'()">교환</button> '+'  <br> ';
-                console.log("단위"+money_list[i]);
-                console.log("얼마"+money_list_val[i]);
             }
             
             $('.chean').append(test_key_append);
